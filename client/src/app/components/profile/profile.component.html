@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div class="fluid-container col-sm-12" style="background:#e8e5e5;height:700px;">
+  <div class="col-sm-offset-3 col-sm-6" style="margin-top:40px;">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Profile</h3>
+      </div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <font style="font-size:18px; font-style:bold;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username </font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font style="font-size:17px"> {{ username }}</font>
+          </li>
+          <li class="list-group-item">
+            <font style="font-size:18px; font-style:bold;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email </font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font style="font-size:17px">{{ email }} </font>
+          </li>
+          <li class="list-group-item">
+            <font style="font-size:18px; font-style:bold;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone No </font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-size:17px">{{ email }} </font>
+          </li>
+          <li class="list-group-item">
+            <font style="font-size:18px; font-style:bold;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address </font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-size:17px">{{ email }} </font>
+          </li>
+
+          <li *ngIf="change" class="list-group-item">
+            <div class="input-group col-sm-10">
+              <span class="input-group-addon" id="basic-addon1" style="width:30%;">New Password</span>
+              <input type="password" class="form-control" placeholder="*New Password" aria-describedby="basic-addon1">
+            </div>
+          </li>
+          <li *ngIf="change" class="list-group-item ">
+            <div class="input-group col-sm-10">
+              <span class="input-group-addon" id="basic-addon1" style="width:30%;">Confirm Password</span>
+              <input type="password" class="form-control" placeholder="*Confirm Password" aria-describedby="basic-addon1">
+            </div>
+          </li>
+        </ul>
+        <button *ngIf="!change" class="btn btn-primary col-sm-offset-9" (click)="changes()">Change Password</button>
+        <button *ngIf="change" class="btn btn-success col-sm-offset-9" (click)="changed()">Save Password</button>
+      </div>
+    </div>
+  </div>
+</div>

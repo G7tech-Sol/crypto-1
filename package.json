@@ -1,0 +1,37 @@
+{
+  "name": "exchange",
+  "version": "1.0.0",
+  "description": "Crypto Exchange",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "cd client && ng build --prod && cd.. && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malik9353/crypto.git"
+  },
+  "author": "Malik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malik9353/crypto/issues"
+  },
+  "homepage": "https://github.com/malik9353/crypto#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bitcore-lib": "^0.15.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.11",
+    "node-binance-api": "^0.4.25",
+    "npm": "^5.8.0",
+    "path": "^0.12.7",
+    "request": "^2.85.0",
+    "socket.io": "^2.0.4",
+    "ws": "^5.1.0"
+  }
+}
