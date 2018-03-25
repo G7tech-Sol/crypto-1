@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class AuthService
 {
-  domain = "http://localhost:3001";
+  domain = "http://localhost:3000";
   authToken;
   user;
   options;

@@ -20,7 +20,7 @@ app.use(cors(
   origin: 'http://localhost:4200'
 }))
 
-var server = app.listen(process.env.port||3001,function ()
+var server = app.listen(process.env.port||3000,function ()
 {
   console.log("*you are listeninig for request*");
 });
