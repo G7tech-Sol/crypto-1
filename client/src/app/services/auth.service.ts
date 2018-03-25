@@ -23,7 +23,7 @@ export class AuthService
       headers: new Headers({'Content-Type': 'application/json','authorization': this.authToken})
     });
   }
-
+  
   loadToken()
   {
     this.authToken = localStorage.getItem('token');
